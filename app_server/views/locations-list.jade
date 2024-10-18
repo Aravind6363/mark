@@ -1,0 +1,47 @@
+doctype html
+html
+    head
+        title #{title}
+        // Linking the CSS files
+        link(rel='stylesheet', href='/style.css')
+
+    body
+        header
+            h1 #{pageHeader.title}
+
+        // BMI Calculator Form
+        h2 BMI Calculator
+        form(action='/calculate', method='post')
+            div
+                label(for='weight') Weight (kg)
+                input(type='number', name='weight', required)
+            div
+                label(for='height') Height (cm)
+                input(type='number', name='height', required)
+            div
+                button(type='submit') Calculate BMI
+
+        // Displaying BMI result and diet plan
+        if bmi
+            h3 Your BMI: #{bmi}
+            h3 Diet Plan: #{dietPlan}
+
+            // Recommendations after BMI calculation
+            h4 Recommended Foods
+            p Based on your BMI, here are some foods you should consider:
+            ul
+                li Fruits and vegetables for vitamins and minerals
+                li Lean proteins like chicken, fish, or tofu for muscle maintenance
+                li Whole grains such as brown rice and oats for sustained energy
+                li Healthy fats from sources like avocados and nuts
+
+            // Workout Planner Section
+            h4 Workout Planner
+            p Here’s a simple workout plan to complement your diet:
+            ul
+                li Cardio (e.g., jogging, cycling) - 30 minutes, 3 times a week
+                li Strength training (e.g., weight lifting) - 20-30 minutes, 2 times a week
+                li Flexibility exercises (e.g., yoga or stretching) - 10-15 minutes, daily
+
+        footer
+            p © FITZEE - All rights reserved

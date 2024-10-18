@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  background: url('path/to/your/background-image.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the background covers the entire viewport */
+  font-family: 'Arial', sans-serif; /* General font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+  padding: 15px 20px; /* Padding */
+  text-align: center; /* Center text alignment */
+  color: #d6d2ce; /* White text for contrast */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Navbar Styling */
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start; /* Align items to the left */
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Space between nav items */
+}
+
+.navbar-nav li {
+  display: inline;
+}
+
+.navbar-nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #f0f0f0; /* Light background for nav links */
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; /* Add transform for hover effect */
+  position: relative; /* For positioning icon */
+}
+
+.navbar-nav a:hover {
+  background-color: #e0e0e0; /* Change color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Main Content */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  max-width: 400px; /* Set a max width for form */
+  margin: 20px auto; /* Center the form */
+  padding: 20px; /* Padding inside the form */
+  background-color: #fff; /* Form background */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+}
+
+/* Input Fields */
+input[type="number"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input[type="number"]:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button[type="submit"] {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Padding */
+  background-color: #007bff; /* Button background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s; /* Smooth background transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(240, 240, 240, 0.9); /* Slightly transparent footer background */
+  color: #000; /* Footer text color */
+  text-align: center; /* Center align footer text */
+  padding: 10px 0; /* Footer padding */
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Full width */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Additional Styles (as requested) */
+.about-button {
+  background-color: #ff9933; /* Rich orange color */
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.about-button:hover {
+  background-color: #ff6600;
+}
+
+/* Dashboard-Specific Styles */
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the start */
+  padding: 20px;
+}
+
+.dashboard-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-nav li {
+  margin-bottom: 10px;
+}
+
+.dashboard-nav a {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.dashboard-nav a:hover {
+  background-color: #e0e0e0;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.dashboard-widget {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
